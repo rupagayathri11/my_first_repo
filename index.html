@@ -1,0 +1,99 @@
+Title: Design a webpage that includes a horizontal navigation menu with links to "Home," "About," "Services," and "Contact," followed by a section that
+displays a list of your favorite books in a neat table with columns for Title,
+Author, and Genre. Below the table, insert an image of the book cover for one of the books, a video review of the book, and an audio clip of an author interview.
+Source code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Book Favorites</title>
+<style> body {
+font-family: Arial, sans-serif; margin: 20px;
+}
+nav {
+background-color: #333; padding: 10px;
+text-align: center;
+}
+nav a { color: white;
+margin: 0 15px;
+text-decoration: none; font-weight: bold;
+ 
+}
+nav a:hover {
+text-decoration: underline;
+}
+table { width: 100%;
+border-collapse: collapse; margin-top: 20px;
+}
+th, td {
+border: 1px solid #444; padding: 10px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+.media {
+margin-top: 30px;
+}
+.media img { display: block;
+margin-bottom: 20px;
+}
+video { display: block;
+margin-bottom: 20px; width: 300px;
+ 
+height: auto;
+}
+audio { display: block;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+<div class="container">
+<h2>My Favorite Books</h2>
+<table>
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th>Genre</th>
+</tr>
+<tr>
+<td>Veyi Padagalu</td>
+<td>Viswanatha Satyanarayana</td>
+<td>Mythological Fiction</td>
+</tr>
+ 
+<tr>
+<td>Kannella Lokam</td>
+<td>Chalam</td>
+<td>Philosophical</td>
+</tr>
+<tr>
+<td>Vignana Deepika</td>
+<td>R. L. Narayanam</td>
+<td>Popular Science</td>
+</tr>
+</table>
+<div class="media">
+<h2>Favorite Book:</h2>
+<img src="tata.jpg" alt="Ratan Tata Biography" width="250" height="250">
+<h2>Ratan Tata Biography Video</h2>
+<video controls>
+<source src="tata.mp4" type="video/mp4">
+<source src="Tata.ogg" type="video/ogg">
+</video>
+<h2>Listen: Ratan Song</h2>
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</body>
+</html>
+ 
+
